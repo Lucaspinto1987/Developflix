@@ -1,18 +1,49 @@
-/* styles.css */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
 }
 
 .genero-container {
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  white-space: nowrap; /* Evita el salto de línea dentro del contenedor */
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.genero {
+  display: inline-block; /* Muestra los elementos en una sola línea */
+  white-space: nowrap; /* Asegura que los elementos no se envuelvan */
 }
 
+.pelicula {
+  width: 200px;
+  display: inline-block; /* Asegura que cada película se muestre en línea */
+  text-align: center;
+  margin-right: 20px; /* Añade espacio entre las películas */
+  vertical-align: top; /* Alinea las tarjetas de película en la parte superior */
+}
 
+.pelicula img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.pelicula h3 {
+  font-size: 1rem;
+  margin: 10px 0 0;
+  height: 2em; /* Ajusta la altura del título para evitar superposición */
+  line-height: 1.2em; /* Asegura que el texto del título no se corte */
+  overflow: hidden; /* Oculta cualquier texto desbordado */
+  text-overflow: ellipsis; /* Añade "..." al texto desbordado */
+  white-space: nowrap; /* Evita el salto de línea en el título */
+}
