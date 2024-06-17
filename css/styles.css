@@ -16,21 +16,21 @@ h1 {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-x: auto; /* Permite el desplazamiento horizontal */
-  white-space: nowrap; /* Evita el salto de línea dentro del contenedor */
+  overflow-x: auto; /* este lo he puesto para que me permita hacer  desplazamiento horizontal y me quede mas prolija la presentacion de la pagina */
+  white-space: nowrap; /* este lo busque para que me evite el salto de línea dentro del contenedor */
 }
 
 .genero {
-  display: inline-block; /* Muestra los elementos en una sola línea */
+  display: inline-block; /* lo he puesto para que me muestre los elementos en una sola línea */
   white-space: nowrap; /* Asegura que los elementos no se envuelvan */
 }
 
 .pelicula {
   width: 200px;
-  display: inline-block; /* Asegura que cada película se muestre en línea */
+  display: inline-block;
   text-align: center;
-  margin-right: 20px; /* Añade espacio entre las películas */
-  vertical-align: top; /* Alinea las tarjetas de película en la parte superior */
+  margin-right: 20px;
+  vertical-align: top;
 }
 
 .pelicula img {
@@ -43,7 +43,8 @@ h1 {
   margin: 10px 0 0;
   height: 2em; /* Ajusta la altura del título para evitar superposición */
   line-height: 1.2em; /* Asegura que el texto del título no se corte */
-  overflow: hidden; /* Oculta cualquier texto desbordado */
-  text-overflow: ellipsis; /* Añade "..." al texto desbordado */
+  overflow: hidden; /* este lo puse porque se me superponian con los de su costado los titulos H3 que estan debajo de la imagen*/
+  white-space: normal; /* Permite que el texto ocupe varias líneas */
+  text-overflow: ellipsis;
   white-space: nowrap; /* Evita el salto de línea en el título */
 }
